@@ -1,0 +1,161 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+body{
+position: relative;  
+  background: linear-gradient(#10343d,#ababde);
+}
+
+
+#hero-section {
+position: relative; /* necessary for positioning the pseudo-element */
+min-height: 50vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+  font-family: italic;
+}
+
+#hero-section::before {
+content: ""; /* necessary for pseudo-elements */
+position: absolute; /* position it relative to its parent */
+/* top: 0;
+left: 0; */
+width: 100%;
+height: 100%;
+background: url("img/codding1.jpg") no-repeat center/cover;
+filter: blur(5px);
+z-index: -1; /* puts behind other content since it is a lower value */
+}
+
+#hero-section img {
+border-radius: 50%;
+width: 150px;
+height: 150px;
+margin-top: 20vh;
+margin-bottom: 20px;
+position: relative; /* ensures it's above the pseudo-element */
+z-index: 2;
+}
+
+
+
+h1{
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  padding-top: 10vh;
+  font-weight: 700;
+}
+
+.navbar{
+  /* color: white; */
+  /* background-color: #d4d2db */
+  background: linear-gradient(#10343d,#ababde);
+}
+
+/* Custom CSS to change Scrollspy active link color */
+.navbar .nav-link.active {
+  color:#d4d2db; /* Change to your desired color */
+}
+
+#mission-section-target, #inspiration-section-target, #contact-section-target, #skills-section-target{
+  position: relative;
+  top: -100px;
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+
+h2{
+  text-align: center;
+}
+
+.img-fluid{
+  width: 50vh;
+  height: auto;
+ float: left; 
+  margin-right: 50px;
+
+}
+
+#mission-section{
+  /* background-color: #baabad; */
+  background: linear-gradient(#10343d,#ababde);
+  color: white;
+  padding:20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+#skills-section{
+  background: linear-gradient(#10343d,#ababde);
+  color: white;
+  padding-left: 4vh;
+}
+
+.bi{
+  font-size: 100px;
+}
+.display-2{
+  text-align: center;
+}
+
+.js,.bs,.css,.html{
+  width: 10vh;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+#contact-section{
+  background:  linear-gradient(#10343d,#ababde);
+color: white; 
+  /* margin: 20px; */
+}
+.bi{
+  margin: 20px;
+}
+
+
+.carousel-item img{
+  height: 50vh;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+  
+.carousel-item:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba)0,0,0,0.3);
+}
+
+.carousel-caption{
+  z-index: 1;
+  color: #9bb7bb;
+  font-size: 20px;
+  font-weight: bold;;
+}
+
+#inspiration-section{
+  background: linear-gradient(#10343d,#ababde);
+  color: white;
+}
+
+
+#footer-section{
+  /* background-color: #b5a6a9; */
+  background: linear-gradient(#10343d,#ababde);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 20px;
+
+}
+
